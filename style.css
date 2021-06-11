@@ -22,11 +22,11 @@ body {
 
 /* Image styles */
 
-.bg-image {
+/* .bg-image {
 	background-image: url("images/the-sleep-co-bed.jpg");
 	background-size: cover;
 	min-height: 10rem;
-}
+} */
 
 /* Universal styles & utility classes */
 
@@ -38,8 +38,16 @@ body {
 	padding: 1rem;
 }
 
+.padded-lg {
+	padding: 12%;
+}
+
 .featured-text {
 	color: #ffbe00;
+}
+
+.white-text {
+	color: white;
 }
 
 .bg-dark {
@@ -59,6 +67,15 @@ body {
 	text-align: center;
 }
 
+.tall-50 {
+	min-height: 50vh;
+}
+.tall-60 {
+	min-height: 60vh;
+}
+.tall-70 {
+	min-height: 70vh;
+}
 .text-right {
 	text-align: right;
 }
@@ -87,10 +104,38 @@ body {
 	font-weight: 800;
 }
 
+.small-text {
+	font-size: 1.5rem;
+}
+
+.medium-text {
+	font-size: 2rem;
+}
+
+.big-text {
+	font-size: 4.5rem;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+	color: rgb(120, 120, 125);
+}
+
+.quote-icon {
+	font-size: 6rem;
+	display: inline-block;
+	color: rgb(120, 120, 125);
+	line-height: 1;
+}
+
 h2 {
 	font-size: 2.5rem;
 	line-height: 1.1;
 	margin-bottom: 1rem;
+}
+
+h3 {
+	line-height: 1;
 }
 
 p {
@@ -103,6 +148,38 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffbe00;
+}
+
+/* Background images */
+
+.bg-bed {
+	background-image: url("images/the-sleep-co-bed.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.bg-pug {
+	background-image: url("images/the-sleep-co-pug.jpg");
+	background-position: 50% 35%;
+	background-size: cover;
+}
+.bg-sheet {
+	background-image: url("images/the-sleep-co-sheets.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.bg-yellow {
+	background-image: url("images/the-sleep-co-yellow.jpg");
+	background-position: 50% 20%;
+	background-size: cover;
+}
+
 /* Header styles */
 header {
 	background-image: url("images/the-sleep-co-sheets.jpg");
@@ -113,4 +190,13 @@ header {
 header h3 {
 	font-size: 5.5rem;
 	line-height: 1;
+}
+
+/* Icon styling */
+
+.fas {
+	display: block;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	text-align: center;
 }
