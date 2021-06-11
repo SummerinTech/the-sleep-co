@@ -10,15 +10,10 @@ navy: #192b37;
 }
 
 /* Temporary styles for structural html */
-
+/* 
 section {
 	border: 2px solid rgb(240, 240, 240);
-}
-
-body {
-	font-family: "Catamaran", sans-serif;
-	color: #192b37;
-}
+} */
 
 /* Image styles */
 
@@ -126,6 +121,11 @@ body {
 	display: inline-block;
 	color: rgb(120, 120, 125);
 	line-height: 1;
+}
+
+body {
+	font-family: "Catamaran", sans-serif;
+	color: #192b37;
 }
 
 h2 {
