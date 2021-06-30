@@ -57,6 +57,10 @@ img {
 	color: white;
 }
 
+.bg-featured {
+	background-color: #ffbe00;
+}
+
 .normal-weight-text {
 	font-weight: 400;
 }
