@@ -20,11 +20,23 @@ img {
 
 /* Image styles */
 
-/* .bg-image {
+.bg-image {
 	background-image: url("images/the-sleep-co-bed.jpg");
 	background-size: cover;
 	min-height: 10rem;
-} */
+}
+
+.landscape {
+	padding-bottom: 65%;
+}
+
+.portrait {
+	padding-bottom: 125%;
+}
+
+.square {
+	padding-bottom: 100%;
+}
 
 /* Universal styles & utility classes */
 
@@ -59,6 +71,10 @@ img {
 
 .bg-featured {
 	background-color: #ffbe00;
+}
+
+.bg-lightblue {
+	background: #e3ecf2;
 }
 
 .normal-weight-text {
@@ -141,6 +157,15 @@ img {
 body {
 	font-family: "Catamaran", sans-serif;
 	color: #192b37;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1rem;
+	line-height: 1.1;
 }
 
 h2 {
