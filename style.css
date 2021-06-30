@@ -9,11 +9,14 @@ navy: #192b37;
 	box-sizing: border-box;
 }
 
-/* Temporary styles for structural html */
-/* 
-section {
-	border: 2px solid rgb(240, 240, 240);
-} */
+img {
+	max-width: 100%;
+}
+
+/* Optional padding to override default gridlex columns */
+[class*="col"] {
+	padding: 0;
+}
 
 /* Image styles */
 
@@ -35,6 +38,10 @@ section {
 
 .padded-lg {
 	padding: 12%;
+}
+
+.margin {
+	margin: 0 0.5%;
 }
 
 .featured-text {
@@ -60,6 +67,10 @@ section {
 
 .text-center {
 	text-align: center;
+}
+
+.right {
+	text-align: right;
 }
 
 .tall-50 {
