@@ -408,4 +408,27 @@ input,
 textarea {
 	width: 100%;
 	display: block;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+	font-family: inherit;
+	font-size: 0.9rem;
+	border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid #ffbe00;
+	outline: none;
+}
+
+label {
+	font-size: 1.3rem;
+}
+
+button {
+	padding: 0.5rem 2rem;
+	background-color: #ffbe00;
+	appearance: none;
+	border: 2px solid #ffbe00;
+	color: inherit;
 }
