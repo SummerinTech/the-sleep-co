@@ -431,4 +431,13 @@ button {
 	appearance: none;
 	border: 2px solid #ffbe00;
 	color: inherit;
+	margin-top: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+button:hover {
+	color: #ffbe00;
+	background: white;
+	border: 2px solid white;
 }
