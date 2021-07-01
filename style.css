@@ -372,9 +372,9 @@ a:hover {
 
 /* Header and footer styles */
 header {
-	background-image: url("images/the-sleep-co-sheets.jpg");
+	background-image: url("images/white-pillows.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	padding: 2% 5%;
 }
 
