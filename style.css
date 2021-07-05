@@ -385,6 +385,7 @@ header h3 {
 
 .logo h2 {
 	margin-bottom: 0;
+	text-align: center;
 }
 
 nav a {
@@ -440,4 +441,111 @@ button:hover {
 	color: #ffbe00;
 	background: white;
 	border: 2px solid white;
+}
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */
+
+.show-xs,
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */
+/* - Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */
+
+@media (max-width: 64em) {
+	.show-md {
+		display: block;
+	}
+	.hide-md {
+		display: none;
+	}
+
+	.md-tall-80 {
+		min-height: 80vh;
+	}
+}
+
+/* ------- SM Media Query (48em / 767px) --------------- */
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */
+
+@media (max-width: 47em) {
+	.show-sm {
+		display: block;
+	}
+	.hide-sm {
+		display: none;
+	}
+
+	.sm-text-center {
+		text-align: center;
+	}
+	.sm-text-left {
+		text-align: left;
+	}
+	.sm-text-right {
+		text-align: right;
+	}
+
+	.sm-padded {
+		padding: 5%;
+	}
+	.sm-padded-1 {
+		padding: 1rem;
+	}
+	.sm-padded-05 {
+		padding: 0.5rem;
+	}
+
+	.sm-padded-t-0 {
+		padding-top: 0;
+	}
+	.sm-padded-b-0 {
+		padding-bottom: 0;
+	}
+	.sm-padded-l-0 {
+		padding-left: 0;
+	}
+	.sm-padded-r-0 {
+		padding-right: 0;
+	}
+
+	.sm-margin-t-0 {
+		margin-top: 0;
+	}
+	.sm-margin-b-0 {
+		margin-bottom: 0;
+	}
+	.sm-margin-l-0 {
+		margin-left: 0;
+	}
+	.sm-margin-r-0 {
+		margin-right: 0;
+	}
+
+	.logo h2 {
+		font-size: 2rem;
+	}
+
+	header h3 {
+		font-size: 11vw;
+	}
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
+
+@media (max-width: 36em) {
+	.show-xs {
+		display: block;
+	}
+	.hide-xs {
+		display: none;
+	}
+
+	h1 {
+		font-size: 1.4rem;
+		line-height: 1.1;
+	}
 }
