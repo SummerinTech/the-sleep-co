@@ -183,7 +183,6 @@ img {
 .bg-image {
 	background-image: url("images/the-sleep-co-bed.jpg");
 	background-size: cover;
-	min-height: 10rem;
 }
 
 .landscape {
@@ -531,6 +530,14 @@ button:hover {
 	header h3 {
 		font-size: 11vw;
 	}
+
+	h2 {
+		font-size: 9vw;
+	}
+
+	footer h2 {
+		text-align: left;
+	}
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */
@@ -544,8 +551,47 @@ button:hover {
 		display: none;
 	}
 
+	.xs-padded-05 {
+		padding: 0.5rem;
+	}
+
+	nav a {
+		font-size: 1rem;
+	}
+
 	h1 {
 		font-size: 1.4rem;
 		line-height: 1.1;
+	}
+
+	h2 {
+		text-align: center;
+		line-height: 1.1;
+	}
+
+	.big-text {
+		font-size: 2.5rem;
+	}
+
+	.big-text .big-text-span {
+		font-size: 1.2rem;
+	}
+
+	.bg-yellow {
+		background-color: #ffbe00;
+		background-image: none;
+	}
+
+	.testimonial {
+		font-size: 1.2rem;
+		padding: 0 0.5rem;
+	}
+
+	.subtitle {
+		font-size: 0.8rem;
+	}
+
+	.quote-icon {
+		font-size: 3rem;
 	}
 }
