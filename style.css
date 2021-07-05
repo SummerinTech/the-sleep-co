@@ -555,6 +555,13 @@ button:hover {
 		padding: 0.5rem;
 	}
 
+	.xs-padded-0 {
+		padding: 0;
+	}
+
+	.xs-text-center {
+		text-align: center;
+	}
 	nav a {
 		font-size: 1rem;
 	}
