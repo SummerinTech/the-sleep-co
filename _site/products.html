@@ -4,6 +4,7 @@
 		<title>The Sleep Co</title>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- Viewport meta for responsive -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- This is the font-awesome link -->
 		<link
@@ -30,16 +31,25 @@
 		<!-- This is our stylesheet, this is the last link -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body></body>
-</html>
-<body>
-	<!------- Header Banner ------->
+	<body>
+
+  	<!------- Header Banner ------->
 	<header class="grid text-center tall-60">
-		<div class="header-nav col-12-top grid">
-				<div class="col-5_xs-12-middle sm-padded-05">
+			<div class="header-nav col-12-top grid">
+				<div class="col-5_xs-6-middle sm-padded-05">
 					<a href="/" class="text-left logo bg-text"><h2>The Sleep Co</h2></a>
 				</div>
-				<nav class="col-7_xs-12-middle right sm-padded-05 sm-text-center">
+				<nav class="col-7_xs-12-top right sm-padded-05 sm-text-center mob-hide">
+					<a class="margin" href="/">Home</a>
+					<a class="margin" href="/about.html">About</a>
+					<a class="margin" href="/products.html">Products</a>
+					<a class="margin" href="/contact.html">Contact</a>
+				</nav>
+				<div class="hamburger-icon col-7_xs-6-top right mob-show">&#9776;</div>
+			</div>
+
+			<div class="mobile-menu mob-show text-center col-12-middle">
+				<nav class="mobile-nav text-center">
 					<a class="margin" href="/">Home</a>
 					<a class="margin" href="/about.html">About</a>
 					<a class="margin" href="/products.html">Products</a>
@@ -192,16 +202,20 @@
 			</div>
 		</section>
 
-  <!---------- Footer ----------->
+
+
+  	<!---------- Footer ----------->
 
 		<footer class="padded grid-spaceBetween bg-dark">
 			<div class="col-4-bottom">
 				<h2>Let's <br /><span class="featured-text">connect </span></h2>
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque culpa
-					quod vel quia soluta qui tempora incidunt enim dolorem iusto. Dicta
-					nisi asperiores optio? Commodi, facilis? Provident molestias obcaecati
-					cum.
+					quod vel quia soluta qui tempora incidunt enim dolorem iusto.
+					<span class="footer-overflow hide-xs">
+						Dicta nisi asperiores optio? Commodi, facilis? Provident molestias
+						obcaecati cum.
+					</span>
 				</p>
 			</div>
 			<div class="col-6-bottom">
@@ -214,31 +228,8 @@
 				</p>
 			</div>
 		</footer>
-		<!-- GetButton.io widget -->
-		<script type="text/javascript">
-			(function () {
-				var options = {
-					whatsapp: "+14043169695", // WhatsApp number
-					whatsapp_color: "#129BF4", // WhatsApp button color
-					call_to_action: "Questions? Message us ", // Call to action
-					position: "right", // Position may be 'right' or 'left'
-				};
-				var proto = document.location.protocol,
-					host = "getbutton.io",
-					url = proto + "//static." + host;
-				var s = document.createElement("script");
-				s.type = "text/javascript";
-				s.async = true;
-				s.src = url + "/widget-send-button/js/init.js";
-				s.onload = function () {
-					WhWidgetSendButton.init(host, proto, options);
-				};
-				var x = document.getElementsByTagName("script")[0];
-				x.parentNode.insertBefore(s, x);
-			})();
-		</script>
-		<!-- /GetButton.io widget -->
-</body>
+		<!-- Script links- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="/index.js"></script>
+	</body>
 </html>
-
-
