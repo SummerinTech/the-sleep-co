@@ -1,0 +1,48 @@
+---
+layout: default
+gallery:
+  - column-size: col-6
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-pug.jpg
+  - column-size: col-6
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-sheets.jpg
+  - column-size: col-12
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-yellow-lights.jpg
+  - column-size: col-4
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-sheets.jpg
+  - column-size: col-4
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-bed.jpg
+  - column-size: col-4
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-pug.jpg
+---
+
+	<!------- Header Banner ------->
+	<header class="grid text-center tall-60">
+			{% include header-nav.html %}
+
+		<!-- Hero section -->
+		<div class="col-12">
+			<h3 class="font-weight-extra-bold editable">
+				Explore <span class="featured-text">Our World</span>
+			</h3>
+			<h1 class="font-weight-light editable">
+				Check out our photo gallery
+			</h1>
+		</div>
+	</header>
+
+  <section class="padded">
+    <div class="gallery grid">
+      {% for item in page.gallery %}
+      <div class="{{item.column-size}}">
+        <div class="bg-image {{item.aspect-ratio}}"
+              style="background-image: url('{{item.background_image}}')";></div>
+      </div> 
+      {% endfor %}
+    </div>
+  </section>

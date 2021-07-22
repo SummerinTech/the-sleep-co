@@ -181,20 +181,11 @@ img {
 /* Image styles */
 
 .bg-image {
+	background-color: rgb(240,240,240);
 	background-image: url("images/the-sleep-co-bed.jpg");
 	background-size: cover;
-}
-
-.landscape {
-	padding-bottom: 65%;
-}
-
-.portrait {
-	padding-bottom: 125%;
-}
-
-.square {
-	padding-bottom: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .bg-dark {
@@ -209,6 +200,13 @@ img {
 .bg-lightblue {
 	background: #e3ecf2;
 }
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
 
 /* Background Position */
 .bg-pos-t {
@@ -363,7 +361,7 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 }
-.bg-yellow {
+.bg-yellow-photo {
 	background-image: url("images/the-sleep-co-yellow.jpg");
 	background-position: 50% 20%;
 	background-size: cover;
@@ -400,6 +398,12 @@ nav a {
 	font-size: 3rem;
 	margin-bottom: 3rem;
 	text-align: center;
+}
+
+/* Gallery Styling */
+
+.gallery [class*="col-"] {
+  padding: 0.5%;
 }
 
 /* Buttons and forms */
