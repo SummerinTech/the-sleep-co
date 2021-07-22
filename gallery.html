@@ -1,5 +1,5 @@
 ---
-layout: default
+layout:
 gallery:
   - column-size: col-6
     aspect-ratio: square
@@ -21,7 +21,7 @@ gallery:
     background_image: /images/the-sleep-co-pug.jpg
 ---
 
-	<!------- Header Banner ------->
+<!------- Header Banner ------->
 	<header class="grid text-center tall-60">
 			{% include header-nav.html %}
 
@@ -40,8 +40,7 @@ gallery:
     <div class="gallery grid">
       {% for item in page.gallery %}
       <div class="{{item.column-size}}">
-        <div class="bg-image {{item.aspect-ratio}}"
-              style="background-image: url('{{item.background_image}}')";></div>
+        <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}')" ;></div>
       </div> 
       {% endfor %}
     </div>
