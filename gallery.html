@@ -41,7 +41,8 @@ gallery:
       {% for item in page.gallery %}
       <div class="{{item.column-size}}">
         <div class="bg-image {{item.aspect-ratio}}"
-              style="background-image: url('{{item.background_image}}')";></div>
+              style="background-image: url('{{item.background_image}}');">
+        </div>
       </div> 
       {% endfor %}
     </div>
