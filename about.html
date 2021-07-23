@@ -1,5 +1,24 @@
 --- 
-layout: default 
+layout: default
+gallery:
+  - heading: Built to last a 
+    span: lifetime
+    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias distinctio deleniti vel! Asperiores omnis rerum doloremque, animi temporibus ab amet explicabo voluptate est. Cupiditate, harum. Provident perferendis repudiandae expedita repellendus!
+    bed_image: /images/the-sleep-co-bed.jpg
+  - heading: Built to last a 
+    span: lifetime
+    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias distinctio deleniti vel! Asperiores omnis rerum doloremque, animi temporibus ab amet explicabo voluptate est. Cupiditate, harum. Provident perferendis repudiandae expedita repellendus!
+    bed_image: /images/the-sleep-co-bed.jpg
+features:
+  - icon: fa-cloud
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab nobis, qui praesentium iste magnam esse, minus exercitationem modi veniam, deleniti atque harum asperiores at ad saepe. Quod, asperiores ipsum.
+  - icon: fa-cloud
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab nobis, qui praesentium iste magnam esse, minus exercitationem modi veniam, deleniti atque harum asperiores at ad saepe. Quod, asperiores ipsum.
+  - icon: fa-cloud
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab nobis, qui praesentium iste magnam esse, minus exercitationem modi veniam, deleniti atque harum asperiores at ad saepe. Quod, asperiores ipsum.
+  - icon: fa-cloud
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab nobis, qui praesentium iste magnam esse, minus exercitationem modi veniam, deleniti atque harum asperiores at ad saepe. Quod, asperiores ipsum.
+
 --- 	
 	
 	<!------- Header Banner ------->
@@ -32,32 +51,23 @@ layout: default
 	</section>
 
   	<!-------- Gallery/ About Section -------->
-		<section class="grid padded">
-      	<div class="bg-bed col-6_xs-12 tall-70">
+			{% for item in page.gallery %}
+		<section class="grid padded flex-flip">
+		
+      	<div class="col-6_xs-12 tall-70"
+						 style="background-image: url('{{item.bed_image}}');">
 				<!-- Background image bed -->
 			</div>
 			<div class="padded col-6_xs-12-middle">
-				<h2>Built to last a <span class="featured-text">lifetime</span></h2>
+				<h2>{{item.heading}}<span class="featured-text"> {{item.span}}</span></h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-					ratione sequi quod tenetur quam ipsa molestias enim deleniti, nostrum
-					nemo earum non illo? Repudiandae tenetur harum est modi, deleniti quo!
+					{{item.text}}
 				</p>
 			</div>
+		
 		</section>
-    <section class="grid padded">
-			<div class="padded col-6_xs-12-middle">
-				<h2>Built to last a <span class="featured-text">lifetime</span></h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-					ratione sequi quod tenetur quam ipsa molestias enim deleniti, nostrum
-					nemo earum non illo? Repudiandae tenetur harum est modi, deleniti quo!
-				</p>
-			</div>
-      	<div class="bg-bed col-6_xs-12 tall-70">
-				<!-- Background image bed -->
-			</div>
-		</section>
+
+			{% endfor %}
 
     <!-------- icon grid sustainability -------->
 		<section class="padded grid bg-featured">
@@ -66,38 +76,16 @@ layout: default
 					<span class="white-text">Features </span>you will love
 				</h2>
 			</div>
+
+			{% for item in page.features %}
 			<div class="padded-sm col-3_xs-12">
-				<i class="fas fa-cloud"></i>
+				<i class="fas {{item.icon}}"></i>
 				<p class="xs-text-center">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-					aliquam sit accusantium autem voluptatibus, et esse fugit consectetur
-					qui maxime?
+					{{item.description}}
 				</p>
 			</div>
-			<div class="padded-sm col-3_xs-12">
-				<i class="fas fa-cloud"></i>
-				<p class="xs-text-center">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odit,
-					ipsam ducimus dicta quisquam inventore, delectus voluptatem quod
-					provident
-				</p>
-			</div>
-			<div class="padded-sm col-3_xs-12">
-				<i class="fas fa-cloud"></i>
-				<p class="xs-text-center">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-					adipisci, dolore ea sit eligendi modi, magnam eveniet ab dolorum
-					libero
-				</p>
-			</div>
-			<div class="padded-sm col-3_xs-12">
-				<i class="fas fa-cloud"></i>
-				<p class="xs-text-center">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-					totam, error accusamus nobis dignissimos, aperiam perferendis beatae
-					sit
-				</p>
-			</div>
+
+			{% endfor %}
 		</section>
 
   

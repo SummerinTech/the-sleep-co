@@ -180,6 +180,10 @@ img {
 
 /* Image styles */
 
+.flex-flip:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
 .bg-image {
 	background-color: rgb(240,240,240);
 	background-image: url("images/the-sleep-co-bed.jpg");
